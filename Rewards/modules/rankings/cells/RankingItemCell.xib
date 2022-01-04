@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sourcesanspro-light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="sourcesanspro-regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RankingItemCell" customModule="Rewards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="10000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjQ-Z9-NO4" userLabel="labelRank">
+                        <rect key="frame" x="5" y="22" width="40" height="15.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="AjO-BV-i1z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiw-Si-ydl">
+                        <rect key="frame" x="50" y="12" width="36" height="36"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person_white_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="Asu-dq-9Bx">
+                                <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="4iK-Lh-qr0"/>
+                                    <constraint firstAttribute="height" constant="20" id="l16-U2-mQE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hxk-I4-LMz">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="0.2245291096" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Asu-dq-9Bx" firstAttribute="centerX" secondItem="iiw-Si-ydl" secondAttribute="centerX" id="80e-zy-28a"/>
+                            <constraint firstItem="Asu-dq-9Bx" firstAttribute="centerY" secondItem="iiw-Si-ydl" secondAttribute="centerY" id="IIO-8A-hSe"/>
+                            <constraint firstAttribute="bottom" secondItem="hxk-I4-LMz" secondAttribute="bottom" id="JSv-Pl-Ima"/>
+                            <constraint firstAttribute="trailing" secondItem="hxk-I4-LMz" secondAttribute="trailing" id="ZlX-1p-zCz"/>
+                            <constraint firstItem="hxk-I4-LMz" firstAttribute="top" secondItem="iiw-Si-ydl" secondAttribute="top" id="kAd-eS-MgX"/>
+                            <constraint firstAttribute="width" constant="36" id="mu1-Vm-FyD"/>
+                            <constraint firstItem="hxk-I4-LMz" firstAttribute="leading" secondItem="iiw-Si-ydl" secondAttribute="leading" id="oqR-oz-qBp"/>
+                            <constraint firstAttribute="height" constant="36" id="rkt-WL-OGD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzn-vD-oNV" userLabel="labelUsername">
+                        <rect key="frame" x="101" y="21" width="177" height="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qn-1b-1HU">
+                        <rect key="frame" x="288" y="19" width="22" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHM-WU-Cug" userLabel="labelRewards">
+                                <rect key="frame" x="8" y="2.5" width="6" height="15.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4823529412" green="0.6705882353" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="PRf-vj-KbE"/>
+                            <constraint firstItem="EHM-WU-Cug" firstAttribute="centerX" secondItem="3qn-1b-1HU" secondAttribute="centerX" id="eKm-67-FWk"/>
+                            <constraint firstItem="EHM-WU-Cug" firstAttribute="centerY" secondItem="3qn-1b-1HU" secondAttribute="centerY" id="hkn-1i-VLd"/>
+                            <constraint firstAttribute="height" constant="22" id="suc-LF-ZFS"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-sC-1Zd">
+                        <rect key="frame" x="0.0" y="58.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Z0x-ov-c0J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="iiw-Si-ydl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3kT-Bs-ZHa"/>
+                    <constraint firstAttribute="bottom" secondItem="VHf-sC-1Zd" secondAttribute="bottom" id="CeE-NN-6Bv"/>
+                    <constraint firstItem="Wzn-vD-oNV" firstAttribute="leading" secondItem="iiw-Si-ydl" secondAttribute="trailing" constant="15" id="DhJ-nX-KcR"/>
+                    <constraint firstAttribute="trailing" secondItem="VHf-sC-1Zd" secondAttribute="trailing" id="FhL-g8-RyZ"/>
+                    <constraint firstItem="DjQ-Z9-NO4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="LB0-LH-lAe"/>
+                    <constraint firstItem="3qn-1b-1HU" firstAttribute="leading" secondItem="Wzn-vD-oNV" secondAttribute="trailing" constant="10" id="Qlj-Qy-2Cd"/>
+                    <constraint firstItem="DjQ-Z9-NO4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VXT-q2-JuR"/>
+                    <constraint firstItem="3qn-1b-1HU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xat-ij-aqz"/>
+                    <constraint firstItem="Wzn-vD-oNV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aFc-OB-dwJ"/>
+                    <constraint firstItem="VHf-sC-1Zd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bT5-Jl-dxs"/>
+                    <constraint firstItem="iiw-Si-ydl" firstAttribute="leading" secondItem="DjQ-Z9-NO4" secondAttribute="trailing" constant="5" id="cxO-fP-MhJ"/>
+                    <constraint firstAttribute="trailing" secondItem="3qn-1b-1HU" secondAttribute="trailing" constant="10" id="iCp-Dc-Ujm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageHolder" destination="Asu-dq-9Bx" id="y14-1K-end"/>
+                <outlet property="imageLogo" destination="hxk-I4-LMz" id="bEu-sE-95H"/>
+                <outlet property="labelRank" destination="DjQ-Z9-NO4" id="P8F-ev-yH5"/>
+                <outlet property="labelRewards" destination="EHM-WU-Cug" id="6f8-Xx-xiM"/>
+                <outlet property="labelUsername" destination="Wzn-vD-oNV" id="MKL-Vr-TeL"/>
+                <outlet property="viewDivider" destination="VHf-sC-1Zd" id="RUj-4C-rvm"/>
+                <outlet property="viewHolder" destination="iiw-Si-ydl" id="P5S-hO-MZb"/>
+                <outlet property="viewRewards" destination="3qn-1b-1HU" id="NQa-Qu-LKf"/>
+                <outlet property="viewRewardsWidth" destination="PRf-vj-KbE" id="OeW-M2-rDb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_person_white_48pt" width="48" height="48"/>
+    </resources>
+</document>

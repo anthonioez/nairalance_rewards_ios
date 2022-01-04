@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutFAQViewController" customModule="Rewards" customModuleProvider="target">
+            <connections>
+                <outlet property="menuBar" destination="IB3-2R-W0A" id="NUC-dK-o5w"/>
+                <outlet property="menuBarHeight" destination="ygD-g7-GUd" id="mdI-FY-toq"/>
+                <outlet property="progress" destination="V3u-bh-pfL" id="tIA-MT-Yxc"/>
+                <outlet property="tableList" destination="1gY-kX-bTs" id="QvA-aW-I1M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1gY-kX-bTs">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IB3-2R-W0A" customClass="MenuBar" customModule="Rewards" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="ygD-g7-GUd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Frequently Asked Questions"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_arrow_back_white_48pt"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="ic_more_vert_white_48pt"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3u-bh-pfL" customClass="Progress" customModule="Rewards" customModuleProvider="target">
+                    <rect key="frame" x="155.5" y="563" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="UzW-XD-Dyl"/>
+                        <constraint firstAttribute="height" constant="64" id="y2p-wR-3CX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="bounce"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="objectColor">
+                            <color key="value" red="0.4823529412" green="0.6705882353" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1gY-kX-bTs" firstAttribute="top" secondItem="IB3-2R-W0A" secondAttribute="bottom" id="0aJ-O7-RhG"/>
+                <constraint firstAttribute="bottom" secondItem="1gY-kX-bTs" secondAttribute="bottom" id="JEn-Jr-go1"/>
+                <constraint firstAttribute="trailing" secondItem="1gY-kX-bTs" secondAttribute="trailing" id="MfL-8l-Wwk"/>
+                <constraint firstAttribute="bottom" secondItem="V3u-bh-pfL" secondAttribute="bottom" constant="40" id="Spn-0j-c6b"/>
+                <constraint firstItem="IB3-2R-W0A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WsG-hl-9Dq"/>
+                <constraint firstItem="IB3-2R-W0A" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ejI-mo-nzm"/>
+                <constraint firstAttribute="trailing" secondItem="IB3-2R-W0A" secondAttribute="trailing" id="hcm-M2-HCg"/>
+                <constraint firstItem="V3u-bh-pfL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qat-R3-19x"/>
+                <constraint firstItem="1gY-kX-bTs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sfJ-dd-y0l"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_back_white_48pt" width="48" height="48"/>
+        <image name="ic_more_vert_white_48pt" width="48" height="48"/>
+    </resources>
+</document>

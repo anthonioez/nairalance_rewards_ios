@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sourcesanspro-bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FAQQuestionCell" customModule="Rewards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXz-JO-MZ1">
+                        <rect key="frame" x="15" y="16" width="316" height="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_keyboard_arrow_down_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="pix-57-acy">
+                        <rect key="frame" x="341" y="12" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="ofM-F6-4JF"/>
+                            <constraint firstAttribute="height" constant="24" id="pfh-tu-DWL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lXz-JO-MZ1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="CkO-bB-lQw"/>
+                    <constraint firstItem="pix-57-acy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dMy-FG-IBe"/>
+                    <constraint firstAttribute="trailing" secondItem="pix-57-acy" secondAttribute="trailing" constant="10" id="kdd-mG-JkO"/>
+                    <constraint firstItem="pix-57-acy" firstAttribute="leading" secondItem="lXz-JO-MZ1" secondAttribute="trailing" constant="10" id="lQj-Vz-aR8"/>
+                    <constraint firstItem="lXz-JO-MZ1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xSf-Fm-bi3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageArrow" destination="pix-57-acy" id="MIt-XL-v8A"/>
+                <outlet property="labelTitle" destination="lXz-JO-MZ1" id="Pzi-as-yev"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_keyboard_arrow_down_48pt" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sourcesanspro-regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuBar">
+            <connections>
+                <outlet property="buttonLeft" destination="gVO-fD-25o" id="wZU-bQ-a4c"/>
+                <outlet property="buttonLeftConstraint" destination="GPi-87-NHN" id="A9N-T5-gbs"/>
+                <outlet property="buttonRight" destination="37U-qi-ZDb" id="x9z-VU-FUD"/>
+                <outlet property="labelTitle" destination="jxm-0C-czs" id="KXA-yt-tWi"/>
+                <outlet property="viewDivider" destination="gs7-iD-OBq" id="lyS-Mf-Wgq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojg-lb-tj5">
+                    <rect key="frame" x="0.0" y="20" width="452" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVO-fD-25o" userLabel="buttonLeft">
+                            <rect key="frame" x="-30" y="8.5" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="35A-mr-hPf"/>
+                                <constraint firstAttribute="height" constant="32" id="64u-fU-z9k"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                            <state key="normal" image="ic_arrow_back_white_48pt"/>
+                            <connections>
+                                <action selector="onButtonLeft:" destination="-1" eventType="touchUpInside" id="LEo-63-Bm2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxm-0C-czs">
+                            <rect key="frame" x="17" y="12.5" width="382" height="25.5"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37U-qi-ZDb" userLabel="buttonRight">
+                            <rect key="frame" x="414" y="10.5" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="F77-Iy-PSx"/>
+                                <constraint firstAttribute="height" constant="28" id="KVY-10-tgI"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                            <connections>
+                                <action selector="onButtonRight:" destination="-1" eventType="touchUpInside" id="7nU-Y2-yD5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gVO-fD-25o" firstAttribute="leading" secondItem="Ojg-lb-tj5" secondAttribute="leading" constant="-30" id="GPi-87-NHN"/>
+                        <constraint firstItem="37U-qi-ZDb" firstAttribute="centerY" secondItem="Ojg-lb-tj5" secondAttribute="centerY" id="ML1-Q6-W1D"/>
+                        <constraint firstItem="jxm-0C-czs" firstAttribute="leading" secondItem="gVO-fD-25o" secondAttribute="trailing" constant="15" id="TmY-mF-5G5"/>
+                        <constraint firstItem="gVO-fD-25o" firstAttribute="centerY" secondItem="Ojg-lb-tj5" secondAttribute="centerY" id="UBk-Xd-OGI"/>
+                        <constraint firstItem="jxm-0C-czs" firstAttribute="centerY" secondItem="Ojg-lb-tj5" secondAttribute="centerY" id="a1Z-eW-DmU"/>
+                        <constraint firstAttribute="trailing" secondItem="37U-qi-ZDb" secondAttribute="trailing" constant="10" id="hds-iT-I4m"/>
+                        <constraint firstItem="37U-qi-ZDb" firstAttribute="leading" secondItem="jxm-0C-czs" secondAttribute="trailing" constant="15" id="z2Q-7E-STu"/>
+                        <constraint firstAttribute="height" constant="50" id="zvC-ue-U3S"/>
+                    </constraints>
+                </view>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-iD-OBq">
+                    <rect key="frame" x="0.0" y="69" width="452" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5bH-xk-vnY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.56470588239999997" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ojg-lb-tj5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N5F-Vl-0Ny"/>
+                <constraint firstAttribute="bottom" secondItem="Ojg-lb-tj5" secondAttribute="bottom" id="QFX-pm-pl4"/>
+                <constraint firstAttribute="trailing" secondItem="Ojg-lb-tj5" secondAttribute="trailing" id="SQD-05-uJK"/>
+                <constraint firstItem="gs7-iD-OBq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mW5-KH-twM"/>
+                <constraint firstAttribute="trailing" secondItem="gs7-iD-OBq" secondAttribute="trailing" id="nHl-Ce-8h1"/>
+                <constraint firstAttribute="bottom" secondItem="gs7-iD-OBq" secondAttribute="bottom" id="pv3-di-bs1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="293" y="-181"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_back_white_48pt" width="48" height="48"/>
+    </resources>
+</document>
