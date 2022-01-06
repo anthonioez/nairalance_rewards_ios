@@ -1,4 +1,6 @@
-# nairalance_rewards_ios
+# Nairalance Rewards for iOS
+
+https://nairalance.com
 
 ![Home](https://github.com/anthonioez/nairalance_rewards_ios/blob/main/images/home.png)
 
